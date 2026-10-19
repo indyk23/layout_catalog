@@ -36,8 +36,7 @@ body {
   top: 10px;
   left: 50px;
 
-  display: flex;
-  align-items: center;
+  display: block;
 
   width: 40px;
   height: 40px;
@@ -139,12 +138,10 @@ body {
   position: relative;
   z-index: 1;
 
-  display: flex;
-  flex-direction: column;
+  display: block;
 
   width: 200px;
   height: 408px;
-  padding: 0 16px;
 
   border: 1px solid $kremuwka-color;
   border-radius: 5px;
@@ -155,16 +152,16 @@ body {
     transform 300ms ease,
     box-shadow 300ms ease;
 
-  &:hover {
-    z-index: 2;
-
-    transform: scale(1.2);
-
-    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
-  }
   &__title {
-    min-height: 36px;
-    margin: 0 0 4px;
+    position: absolute;
+    bottom: 165px;
+    left: 17px;
+
+    width: 166px;
+    height: 36px;
+    margin: 0;
+
+    overflow: hidden;
 
     font-size: 12px;
     font-weight: 500;
@@ -174,18 +171,26 @@ body {
     transition: color 300ms ease;
   }
 
+  &:hover {
+    z-index: 2;
+
+    transform: scale(1.2);
+
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+  }
+
   &:hover .card__title {
     color: #34568b;
   }
 }
 
 .card__image {
-  flex-shrink: 0;
+  position: absolute;
+  top: 32px;
+  left: 19px;
 
   width: 160px;
   height: 134px;
-
-  margin: 32px auto 40px;
 
   background-image: url('../images/imac.jpeg');
   background-repeat: no-repeat;
@@ -194,7 +199,13 @@ body {
 }
 
 .card__code {
-  margin-bottom: 16px;
+  position: absolute;
+  bottom: 147px;
+  left: 17px;
+
+  width: 166px;
+  height: 14px;
+  margin: 0;
 
   font-size: 10px;
   font-weight: 400;
@@ -203,34 +214,49 @@ body {
 }
 
 .card__review {
+  position: absolute;
+  bottom: 115px;
+  left: 17px;
+
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 
   width: 166px;
   height: 16px;
-  margin: 0 auto 24px;
+  margin: 0;
 }
 
 .card__reviews {
+  width: 53px;
+  height: 16px;
+  margin: 0;
+
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
   color: $primary-color;
+  text-align: right;
   white-space: nowrap;
 }
 
 .card__price {
+  position: absolute;
+  bottom: 73px;
+  left: 17px;
+
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 
-  width: 100%;
-  margin-bottom: 16px;
+  width: 166px;
+  height: 18px;
+  margin: 0;
 }
 
 .card__price-label {
   font-size: 12px;
+  font-weight: 400;
   line-height: 18px;
   color: $gray-color;
 }
@@ -243,15 +269,16 @@ body {
 }
 
 .card__buy {
+  position: absolute;
+  bottom: 16px;
+  left: 17px;
+
   display: flex;
-  flex-shrink: 0;
   align-items: center;
   justify-content: center;
 
-  width: 100%;
+  width: 166px;
   height: 40px;
-  margin-top: auto;
-  margin-bottom: 16px;
 
   border: 1px solid $blue-color;
   border-radius: 5px;
