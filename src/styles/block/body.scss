@@ -159,16 +159,16 @@ body {
     box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
   }
   &__title {
-  min-height: 36px;
-  margin: 0 0 4px;
+    min-height: 36px;
+    margin: 0 0 4px;
 
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
-  color: $primary-color;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: $primary-color;
 
-  transition: color 300ms ease;
-}
+    transition: color 300ms ease;
+  }
 
   &:hover .card__title {
     color: #34568b;
@@ -187,7 +187,6 @@ body {
   background-position: center;
   background-size: contain;
 }
-
 
 .card__code {
   margin-bottom: 16px;
