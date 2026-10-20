@@ -151,14 +151,9 @@ body {
     transform 300ms ease,
     box-shadow 300ms ease;
 
-  &:hover {
-    z-index: 2;
+}
 
-    transform: scale(1.2);
-
-    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
-  }
-  &__title {
+.card__title {
     min-height: 36px;
     margin: 0 0 4px;
 
@@ -170,10 +165,17 @@ body {
     transition: color 300ms ease;
   }
 
-  &:hover .card__title {
+.card:hover {
+    z-index: 2;
+
+    transform: scale(1.2);
+
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+  }
+
+.card:hover .card__title {
     color: #34568b;
   }
-}
 
 .card__image {
   flex-shrink: 0;
