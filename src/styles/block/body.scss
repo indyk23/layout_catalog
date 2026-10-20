@@ -10,10 +10,8 @@ html {
 
 body {
   margin: 0;
-
   font-family: Roboto, Arial, sans-serif;
   color: $primary-color;
-
   background-color: $white-color;
 }
 
@@ -21,11 +19,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   width: 100%;
   height: 60px;
   padding: 0 50px;
-
   background-color: $white-color;
   box-shadow: 0 2px 4px rgb(0 0 0 / 5%);
 }
@@ -34,14 +30,12 @@ body {
   display: flex;
   flex: 0 0 40px;
   align-items: center;
-
   width: 40px;
   height: 40px;
 }
 
 .logo__image {
   display: block;
-
   width: 40px;
   height: 40px;
 }
@@ -54,18 +48,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
   height: 100%;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .nav__item {
   display: flex;
   align-items: center;
-
   height: 100%;
 }
 
@@ -75,12 +66,9 @@ body {
 
 .nav__link {
   position: relative;
-
   display: flex;
   align-items: center;
-
   height: 100%;
-
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
@@ -88,7 +76,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
-
   transition: color 300ms ease;
 
   &:hover {
@@ -103,13 +90,10 @@ body {
       right: 0;
       bottom: 0;
       left: 0;
-
       height: 4px;
-
       border-radius: 8px;
-
-      background-color: $blue-color;
       content: '';
+      background-color: $blue-color;
     }
   }
 }
@@ -119,9 +103,7 @@ body {
   grid-template-columns: repeat(1, 200px);
   gap: 46px 48px;
   justify-content: center;
-
   margin: 0;
-
   padding: 50px 40px;
 }
 
@@ -134,19 +116,14 @@ body {
 .card {
   position: relative;
   z-index: 1;
-
   display: flex;
   flex-direction: column;
-
   width: 200px;
   height: 408px;
   padding: 0 16px;
-
   border: 1px solid $kremuwka-color;
   border-radius: 5px;
-
   background-color: $white-color;
-
   transition:
     transform 300ms ease,
     box-shadow 300ms ease;
@@ -155,20 +132,16 @@ body {
 .card__title {
   min-height: 36px;
   margin: 0 0 4px;
-
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
   color: $primary-color;
-
   transition: color 300ms ease;
 }
 
 .card:hover {
   z-index: 2;
-
   transform: scale(1.2);
-
   box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
 }
 
@@ -178,20 +151,17 @@ body {
 
 .card__image {
   flex-shrink: 0;
-
   width: 160px;
   height: 134px;
   margin: 32px auto 40px;
-
   background-image: url('../images/imac.jpeg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .card__code {
   margin-bottom: 16px;
-
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
@@ -202,7 +172,6 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-
   width: 100%;
   min-height: 16px;
   margin-bottom: 24px;
@@ -219,7 +188,6 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-
   width: 100%;
   margin-bottom: 16px;
 }
@@ -237,37 +205,41 @@ body {
   color: $primary-color;
 }
 
-.card__buy {
+.card__buy,
+.card__buy2 {
   display: flex;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   height: 40px;
   margin-top: auto;
   margin-bottom: 16px;
-
-  border: 1px solid $blue-color;
   border-radius: 5px;
-
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   color: $white-color;
   text-decoration: none;
   text-transform: uppercase;
-
   background-color: $blue-color;
-
   transition:
     color 300ms ease,
     background-color 300ms ease;
+}
 
-  &:hover {
-    color: $blue-color;
-    background-color: $white-color;
-  }
+.card__buy {
+  border: 1px solid $blue-color;
+}
+
+.card__buy2 {
+  border: 0 solid $blue-color;
+}
+
+.card__buy:hover,
+.card__buy2:hover {
+  color: $blue-color;
+  background-color: $white-color;
 }
 
 @media (min-width: 488px) {
@@ -292,22 +264,18 @@ body {
   .header {
     flex-wrap: wrap;
     gap: 12px;
-
     min-height: 60px;
-
     padding: 12px 24px;
   }
 
   .nav {
-    width: 100%;
-
     overflow-x: auto;
+    width: 100%;
   }
 
   .nav__list {
-    height: 40px;
-
     min-width: max-content;
+    height: 40px;
   }
 }
 

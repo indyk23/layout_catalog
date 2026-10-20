@@ -1,3 +1,12 @@
-@import 'block/color';
-@import 'block/body';
-@import 'block/star';
+@use './block/utils/variables' as *;
+@use './block/card';
+@use './block/stars';
+@use './block/catalog';
+@use './block/header';
+@use './block/nav';
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: $color-primary;
+}
