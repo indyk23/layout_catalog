@@ -38,13 +38,13 @@
 }
 
 .nav__link:visited {
-  color: $hoover-text-color;
+  color: $color-primary;
   text-decoration: none;
 }
 
 .nav__link:hover,
 .nav__link.is-active {
-  color: $hoover-text-color;
+  color: $background-color;
 }
 
 .nav__link.is-active::after {
@@ -57,7 +57,7 @@
 
   margin: 0;
 
-  background-color: $hoover-text-color;
+  background-color: $background-color;
 
   position: absolute;
   bottom: 0;

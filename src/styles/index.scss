@@ -1,4 +1,4 @@
-@use './block/utils/variables' as *;
+// @use './block/utils/variables' as *;
 @use './block/card';
 @use './block/star';
 @use './block/catalog';
@@ -8,5 +8,4 @@
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
-  color: $color-primary;
 }
