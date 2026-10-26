@@ -97,6 +97,7 @@
     text-align: center;
     color: $color-secondary;
     text-decoration: none;
+    border: 1px solid $background-color;
 
     background-color: $background-color;
 
@@ -109,7 +110,7 @@
       border: 1px solid $background-color;
       color: $background-color;
       text-decoration: none;
-      background-color: $hoover-button-background-color;
+      background-color: $color-secondary;
     }
   }
 }
